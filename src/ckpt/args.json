@@ -1,0 +1,15 @@
+{
+    "ckpt_path": "./ckpt/checkpoint.pth.tar",
+    "enc": "multi",
+    "enc_pretrained": true,
+    "evaluate": false,
+    "ignore_label": 255,
+    "num_stages": 3,
+    "num_workers": 16,
+    "optim_dec": "adam",
+    "print_every": 10,
+    "random_seed": 42,
+    "snapshot_dir": "./ckpt/",
+    "train_dir": "/home/wit/jyy/NYUD2",
+    "val_dir": "/home/wit/jyy/NYUD2"
+}

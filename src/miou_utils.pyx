@@ -75,7 +75,7 @@ def compute_iu(np.ndarray[np.int_t, ndim=2] cm):
     cdef unsigned int n_classes = cm.shape[0]
     cdef np.ndarray[np.float_t, ndim=1] IU = np.ones(n_classes)
     cdef np.intp_t i
-    for i in xrange(n_classes):
+    for i in range(n_classes): #xrange(n_classes):
         pi = sum(cm[:, i])
         gi = sum(cm[i, :])
         ii = cm[i, i]
